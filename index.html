@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>사다리타기</title>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="ladder.js"></script>
+</head>
+
+
+<body>
+
+<section>
+    <h1>만들기</h1>
+    <article>
+
+        <span>행</span>
+        <input type="text" name="row" onblur="validateLadder()">
+        <span>열</span>
+        <input type="text" name="column" onblur="validateLadder()">
+        <button name="push" onclick="pushLadder()"> 추가 </button>
+
+    </article>
+</section>
+
+
+<section>
+    <h1>타기</h1>
+    <article>
+        <span>시작 점</span>
+        <input type="number" name="start-point">
+        <button name="start" onclick="selectLadder()"> 선택 </button>
+    </article>
+</section>
+
+
+<span id="result">결과 값은?</span>
+
+</body>
+
+
+</html>
